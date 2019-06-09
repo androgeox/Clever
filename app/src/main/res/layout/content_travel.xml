@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TravelActivity"
+    tools:showIn="@layout/activity_travel"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/show_cost_travel"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginVertical="33dp"/>
+
+    <Button
+        android:id="@+id/go_btn_travel"
+        android:layout_width="251dp"
+        android:layout_height="36dp"
+        android:text="@string/go_but"
+        android:layout_marginVertical="58dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp"
+        android:background="#3354AA"
+        />
+
+</LinearLayout>

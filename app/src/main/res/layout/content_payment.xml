@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PaymentActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="328dp"
+        android:layout_height="22dp"
+        android:text="@string/transport"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="89dp"
+        android:background="#00000000"
+        />
+    <EditText
+        android:id="@+id/text_field"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="#00000000"
+        />
+
+    <TextView
+        android:id="@+id/show_cost"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginVertical="33dp"/>
+
+    <Button
+        android:id="@+id/go_but_pay"
+        android:layout_width="251dp"
+        android:layout_height="36dp"
+        android:text="@string/go_but"
+        android:layout_marginVertical="58dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp"
+        android:background="#3354AA"
+        />
+
+</LinearLayout>
