@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.Date;
 
-public class BuyTicket {
+public class Buy {
 
     @SerializedName("id_pokupki")
     int id;
@@ -12,10 +12,10 @@ public class BuyTicket {
     @SerializedName("fn_ns")
      int fn_ns;
 
-    @SerializedName("orderCardId")
+    @SerializedName("order_card_id")
      Integer orderCardId;  //id_PS
 
-    @SerializedName("TravelDocumentId")
+    @SerializedName("travel_document_id")
      Integer TravelDocumentId; //ID_PD
 
     @SerializedName("price")
@@ -24,7 +24,7 @@ public class BuyTicket {
     @SerializedName("buyDate")
      Date buyDate;
 
-    public BuyTicket(int id, int fn_ns, Integer orderCardId, Integer travelDocumentId, Integer price, Date buyDate) {
+    public Buy(int id, int fn_ns, Integer orderCardId, Integer travelDocumentId, Integer price, Date buyDate) {
         this.id = id;
         this.fn_ns = fn_ns;
         this.orderCardId = orderCardId;
@@ -33,7 +33,11 @@ public class BuyTicket {
         this.buyDate = buyDate;
     }
 
-    public BuyTicket() {
+    public Buy() {
+    }
+
+    public Buy(int id) {
+        this.id = id;
     }
 
     public int getId() {

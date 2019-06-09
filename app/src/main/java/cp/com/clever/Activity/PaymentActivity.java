@@ -50,24 +50,24 @@ public class PaymentActivity extends AppCompatActivity  implements View.OnClickL
         TravelAPI apiService =
                 retrofit.create(TravelAPI.class);
 
-        Travel travel = new Travel(1234, 345, null, 200, "one");
-        Call<Travel> call = apiService.createData(travel);
+//        Travel travel = new Travel(1234, 345, null, 200, "one");
+//        Call<Travel> call = apiService.createData(travel);
 
 
-//        Data data = new Data(1234, 345, null, 200, "one");
-//        data.setTsId(number_ts.getText().charAt(0));
-//        Call<Data> call = RetrofitClient
-//                .getInstance()
-//                .getApi()
-//                .createData(new Data(1234, 345, null, 200, "one"));
+        Travel travel = new Travel(1234, 345, null, 200, "many");
+        travel.setTsId(Integer.parseInt(number_ts.getText().toString()));
+        Call<Travel> call = RetrofitClient
+                .getInstance()
+                .getApi()
+                .createData(travel);
 
         call.enqueue(new Callback<Travel>() {
             @Override
             public void onResponse(Call<Travel> call, Response<Travel> response) {
-//                if (response.isSuccessful()){
-//                    String s = response.body().toString();
-//                    Toast.makeText(PaymentActivity.this, s,Toast.LENGTH_SHORT).show();
-//                }
+                if (response.isSuccessful()){
+                    String s = response.body().toString();
+                    Toast.makeText(PaymentActivity.this, s,Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
@@ -77,7 +77,7 @@ public class PaymentActivity extends AppCompatActivity  implements View.OnClickL
         });
 
         Intent i  = new Intent(this, BuyActivity.class);
-        i.putExtra("travel_id", travel.getId());
+        i.putExtra("travel_id", Integer.parseInt(number_ts.getText().toString()));
         startActivity(i);
     }
 

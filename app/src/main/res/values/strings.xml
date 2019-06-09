@@ -14,7 +14,7 @@
     <string name="title_activity_payment">Онлайн платеж</string>
     <string name="transport">Транспорт</string>
     <string name="go_but">Поехали!</string>
-    <string name="title_activity_travel">TravelActivity</string>
+    <string name="title_activity_travel">Поездка</string>
     <string name="title_activity_qr">QR</string>
-    <string name="title_activity_buy">BuyActivity</string>
+    <string name="title_activity_buy">Поездка</string>
 </resources>

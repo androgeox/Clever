@@ -16,6 +16,7 @@
         android:layout_marginStart="54dp"
         android:layout_marginTop="83dp"
         android:background="#3354AA"
+
         />
 
     <Button
@@ -27,7 +28,6 @@
         android:layout_marginStart="54dp"
         android:layout_marginTop="83dp"
         android:background="#3354AA"
-        android:layout_marginVertical="22dp"
         />
 
     <Button
@@ -39,7 +39,6 @@
         android:layout_marginStart="54dp"
         android:layout_marginTop="83dp"
         android:background="#3354AA"
-        android:layout_marginVertical="22dp"
         />
 
     <!--<Button-->

@@ -25,19 +25,19 @@
         <activity
             android:name=".Activity.PaymentActivity"
             android:label="@string/title_activity_payment"
-            android:theme="@style/AppTheme.NoActionBar" />
+            />
         <activity
             android:name=".Activity.TravelActivity"
             android:label="@string/title_activity_travel"
-            android:theme="@style/AppTheme.NoActionBar" />
+            />
         <activity
             android:name=".Activity.QRActivity"
             android:label="@string/title_activity_qr"
-            android:theme="@style/AppTheme.NoActionBar" />
+            />
         <activity
             android:name=".Activity.BuyActivity"
             android:label="@string/title_activity_buy"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            />
     </application>
 
 </manifest>
